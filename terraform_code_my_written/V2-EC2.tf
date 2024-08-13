@@ -6,7 +6,7 @@ resource "aws_instance" "demo-server" {
   ami = "ami-0ae8f15ae66fe8cda"
   instance_type = "t2.micro"
   key_name = "dpp"
-  security_groups = [ "demo-sg" ]
+  security_groups = ["demo-sg"]
 }
 resource "aws_security_group" "demo-sg" {
   name        = "demo-sg"
